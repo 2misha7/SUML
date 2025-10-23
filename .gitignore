@@ -13,3 +13,5 @@ venv/
 # Model files (optional — remove if you want to push model.joblib)
 *.joblib
 *.pkl
+
+.idea/
