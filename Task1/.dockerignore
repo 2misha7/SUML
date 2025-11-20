@@ -1,0 +1,14 @@
+.git
+.gitignore
+__pycache__/
+*.py[cod]
+*.log
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+dist/
+build/
+app/iris.joblib
