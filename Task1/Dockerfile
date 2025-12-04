@@ -12,12 +12,12 @@ WORKDIR /app
 
 # Install dependencies first to leverage Docker layer caching
 COPY requirements.txt .
-RUN python -m pip install --upgrade pip && pip install -r requirements.txt
+RUN python -m pip install --upgrade pip && pip install -r requirements.txt --no-cache
 
 # Copy source code
 COPY . .
 
-# Build model artifact inside the image
+# Build model artifact inside the image9
 RUN python train_model.py
 
 EXPOSE 8501
