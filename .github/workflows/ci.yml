@@ -10,6 +10,9 @@ jobs:
     permissions:
       contents: read
       packages: write
+    defaults:
+      run:
+        working-directory: Task1
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,7 +26,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('Task1/requirements.txt') }}
           restore-keys: ${{ runner.os }}-pip-
 
       - name: Install dependencies
