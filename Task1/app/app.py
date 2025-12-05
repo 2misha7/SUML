@@ -1,4 +1,5 @@
 import streamlit as st
+
 from predict import predict
 
 st.set_page_config(page_title="Iris Classifier")
