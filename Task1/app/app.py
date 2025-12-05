@@ -2,7 +2,7 @@ import streamlit as st
 
 from predict import predict
 
-st.set_page_config(page_title="Iris Classifier")
+st.set_page_config(page_title="Iris Classifier Version 2")
 
 st.title("Iris Flower Species Predictor")
 st.write("Enter the flower's measurements below (in centimeters) to predict its species:")
